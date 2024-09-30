@@ -1,0 +1,324 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(249, 249, 249);
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+.bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px;
+    background-color: rgb(42, 145, 78);
+    transition: 0.4s;
+
+    z-index: 5;
+}
+.lateralbar{
+    z-index: 10;
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 0 0 7px;
+    display: none;
+}
+
+.links{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    gap: 15px;
+}
+.showMore{
+    display: none;
+}
+.link{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s;
+}.link:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    padding-left: 10px;
+    border-radius:  0  0 10px 0 ;
+    background-color: rgb(252, 252, 252);
+    transition: 0.2s;
+}
+
+.redes{
+    display: flex; 
+    gap: 50px; 
+    align-items: center;
+}
+.linkinstagram{
+    background-color: rgb(233, 233, 233);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    
+}.linkinstagram:hover{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    width: 50px;
+    height: 50px;
+}
+.instagram{
+    width: 40px;
+    transition: 0.2s;
+
+}.linkinstagram:hover .instagram{
+    filter: invert();
+}
+
+.linkfacebook{
+    background-color: rgb(233, 233, 233);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+.linkfacebook:hover{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(141, 141, 253);
+}
+
+.facebook{
+    width: 18px;
+    filter: grayscale();
+}
+.linkfacebook:hover .facebook{
+    filter: brightness(100);
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(59, 130, 52);
+}
+#main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+
+}
+
+.banner{
+    padding-top: 50px;    
+    width: 100%;
+    opacity: 100%;
+
+    transition: 500ms;
+}#banner0{
+    display: block;
+    z-index: 1;
+}#banner1{
+    /* position: absolute; */
+    position: absolute;
+    opacity: 0%;
+    z-index: 2;
+    filter: grayscale(10);
+}#banner2{
+    /* position: absolute; */
+    position: absolute;
+    opacity: 0%;
+    z-index: 3;
+    filter: invert();
+}
+.button{
+    background: none;
+    border: solid 2px #b6c2ff;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}.button:hover{
+    border: 5px #6e77a6;
+    background-color: #787e9e;
+    
+}
+.titles{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subtitles{
+    padding-top: 15px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.texts{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cursoscontainer{
+    display: flex;
+    gap: 20px; 
+    width: 100%; 
+    justify-content: center;
+}
+.cursoimg{
+    width: 300px;
+    height: 230px;
+    background-color:rgb(223, 223, 223);
+    border-radius: 5px;
+    background-size: 125%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.2s;
+}.cursoimg:hover{
+    background-size: 130%;
+}
+@media (max-width: 1200px) {
+    .links{
+        padding-right: 10%;
+        width: 30%;
+    }
+    .link{
+        font-size: 20px;
+    }.link:hover{
+        font-size: 21px;
+    }
+
+    .image{
+        width: 50%;
+        height: 50%;
+    }
+
+    .redes{
+        gap: 2px;
+    }
+    .facebook{
+        width: 10px;
+    }
+    .linkfacebook{
+        width: 30px;
+        height: 30px;
+    }.linkfacebook:hover{
+        width: 31px;
+        height: 31px;
+    }
+    .instagram{
+        width: 20px;
+    }
+    .linkinstagram{
+        width: 30px;
+        height: 30px;
+    }.linkinstagram:hover{
+        width: 31px;
+        height: 31px;
+    }
+
+
+}
+
+/* Para Celular */
+@media(max-width:1000px){
+    .titles{
+        font-size: 30px;
+    }
+
+    .subtitles{
+        font-size: 25px;
+    }
+
+    .texts{
+        text-align: center;
+    }
+
+    .linkinstagram{
+        display: none;
+    }
+    .instagram{
+        display: none;
+    }.linkfacebook{
+        display: none;
+    }.facebook{
+        display: none;
+    }
+
+    .image{
+        display: none;
+    }
+    .image2{
+        display: block;
+        width: 100%;
+    }
+
+    .informations{
+        width: 100%;
+    }
+
+    .links{
+        display: none;
+    }.link{
+        color: black;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }.link:hover{
+        font-size: 30px;
+    }
+    .showMore{
+        width: 60px;
+        display: block;
+        cursor: pointer;
+        background-image: url(images/showMore.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgb(249, 249, 249);
+        border: none;
+        transition: 0.2s;
+    }.showMore:hover{
+        background-color: rgb(234, 234, 234);
+    }
+    .showMore2{
+        background-image: url(images/showMore.png);
+        background-size: 50px;
+        padding-left: 50px;
+        background-position: left;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 70px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .logo{
+        border-radius:  0 0 0 10px ;
+    }
+}
